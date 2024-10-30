@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 const app = express();
 
-mongoose.connect('mongodb+srv://admin:admin1234@aguhobdb.e7hub.mongodb.net/inventory-management-app?retryWrites=true&w=majority&appName=aguhobDB');
+mongoose.connect('mongodb+srv://@aguhobdb.e7hub.mongodb.net/inventory-management-app?retryWrites=true&w=majority&appName=aguhobDB');
 
 mongoose.connection.once('open', () => console.log('Now connected to MongoDB Atlas'));
 
